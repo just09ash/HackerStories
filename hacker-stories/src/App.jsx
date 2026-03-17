@@ -1,14 +1,13 @@
 import { useState } from 'react'
 
-const ComponentDontNeedThis = "Reactor";
-
 function App() {
-  const ComponentNeedsThis = "Wow!";
+  function add2Num(n1,n2) 
+  {
+    return n1 + n2;
+  }
   return (
     <>
-      <h1>Hacker Stories</h1>
-      <h2>{ComponentDontNeedThis}</h2>
-      <h2>{ComponentNeedsThis}</h2>
+      <h1>{add2Num(10,20)}</h1>
     </>
   )
 }
