@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import List from './List.jsx';
 import Search from './Search.jsx';
-function App() {
-
-
+const App = () =>  {
   return (
     <>
       <div>

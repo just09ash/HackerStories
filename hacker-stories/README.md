@@ -8,3 +8,5 @@ Level 3: https://gamma.app/docs/Level-3-React-JSX-dlaby1gkdyzd0or
 Level 4: https://gamma.app/docs/Level-4-Lists-in-React-hvmq9k2jlg2vvfz
 Level 5: https://gamma.app/docs/Level-5-Creating-More-React-Components-bma9gwly0u365ho
 Level 6: https://gamma.app/docs/Level-6-React-DOM-How-React-Enters-the-Browser-4x3dufjmq3enmax
+Level 7: https://gamma.app/docs/Level-7-React-Component-Definition-Advanced-pp92moxojtw5vb7
+Level 8: https://gamma.app/docs/Level-8-Handler-Functions-in-JSX-djz4cbkzx3qmr29

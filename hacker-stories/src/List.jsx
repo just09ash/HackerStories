@@ -1,6 +1,6 @@
 import React from 'react'
 
-function List() {
+const List = () =>  {
     const list = [
     {
       title: "React",
