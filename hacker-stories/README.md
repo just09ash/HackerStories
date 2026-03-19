@@ -13,3 +13,4 @@ Level 8: https://gamma.app/docs/Level-8-Handler-Functions-in-JSX-djz4cbkzx3qmr29
 Level 9: https://gamma.app/docs/Level-9-React-Props-on40pi5rthlvgt0\
 Level 10: https://gamma.app/docs/LEVEL-10-React-State-nx4fulpd70tsn6t
 Level 11: https://gamma.app/docs/LEVEL-11-Callback-Handlers--cwftdxa6c1ck4kj
+Level 12: https://gamma.app/docs/LEVEL-12-Lifting-State-758emuqrj4kyeya

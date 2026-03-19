@@ -27,8 +27,13 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearch = (event) => {
-    console.log(event.target.value);
-  };
+    setSearchTerm(event.target.value);
+    console.log(searchedStories)
+  }
+
+  const searchedStories = stories.filter((story) => {
+    return story.title.toLowerCase().includes(searchTerm.toLowerCase())
+  })
 
   return (
     <>
