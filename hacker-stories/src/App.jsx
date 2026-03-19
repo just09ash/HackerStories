@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import List from './List.jsx';
 import Search from './Search.jsx';
+
+
 const stories = [
   {
     title: "React",
@@ -19,15 +21,22 @@ const stories = [
     objectID: 1
   }
 ];
+
+
 const App = () => {
-  
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearch = (event) => {
+    console.log(event.target.value);
+  };
+
   return (
     <>
       <div>
         <h1>My Hacker Stories</h1>
-        <Search />
+        <Search onSearch={handleSearch} />
         <hr />
-        <List list={stories}/>
+        <List list={stories} />
       </div>
     </>
   )
