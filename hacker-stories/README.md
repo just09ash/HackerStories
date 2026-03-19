@@ -15,3 +15,4 @@ Level 10: https://gamma.app/docs/LEVEL-10-React-State-nx4fulpd70tsn6t
 Level 11: https://gamma.app/docs/LEVEL-11-Callback-Handlers--cwftdxa6c1ck4kj
 Level 12: https://gamma.app/docs/LEVEL-12-Lifting-State-758emuqrj4kyeya
 Level 13: https://gamma.app/docs/LEVEL-13-Controlled-Components-nz3by85lyix8jsh
+Level 14: https://gamma.app/docs/LEVEL-14-Advanced-Props-Handling-gfm7n4a5a6kxc3p 

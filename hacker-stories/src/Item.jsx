@@ -1,15 +1,15 @@
 import React from 'react'
 
-function Item(props) {
+function Item({url, title, author, num_comments, points}) {
     return (
         <>
             <ul >
                 <li>
-                    <a href={props.item.url}>{props.item.title}</a>
+                    <a href={url}>{title}</a>
                 </li>
-                <li>{props.item.author}</li>
-                <li>{props.item.num_comments}</li>
-                <li>{props.item.points}</li>
+                <li>{author}</li>
+                <li>{num_comments}</li>
+                <li>{points}</li>
             </ul>
         </>
     )
