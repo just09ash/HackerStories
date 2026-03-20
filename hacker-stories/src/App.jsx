@@ -24,9 +24,20 @@ const stories = [
 
 
 const App = () => {
-  const [searchTerm, setSearchTerm] = useState(
-     localStorage.getItem('search') ?? 'React'
-  );
+  const useSemiPersistentState = (key, initialState) => {
+    const [value, setValue] = useState(
+      localStorage.getItem(key) ?? initialState
+    )
+    useEffect(() => {
+    localStorage.setItem(key, value)
+  }, [value, key])
+
+  return [value,setValue]
+  }
+
+  const [searchTerm, setSearchTerm] = useSemiPersistentState('search', 'React')
+
+
 
   useEffect(() => {
     localStorage.setItem('search', searchTerm)
