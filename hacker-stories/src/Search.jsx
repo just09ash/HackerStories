@@ -5,11 +5,13 @@ const Search = (props) => {
         props.onSearch(event)
     }
     return (
-        <div>
-            <label htmlFor="search">Search: </label>
-            <input id="search" type="text" onChange={handleChange} value={props.search}/>
-            <br />
-        </div>
+        <>
+            <div>
+                <label htmlFor="search">Search: </label>
+                <input id="search" type="text" onChange={handleChange} value={props.search} />
+                <br />
+            </div>
+        </>
     )
 }
 
