@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import List from './List.jsx';
-import Search from './Search.jsx';
+import InputWithLabel from './InputWithLabel.jsx';
 
 
 const stories = [
@@ -56,7 +56,7 @@ const App = () => {
     <>
       <div>
         <h1>My Hacker Stories</h1>
-        <Search onSearch={handleSearch} search={searchTerm} />
+        <InputWithLabel id="search" type="text" label="Search: " onSearch={handleSearch} search={searchTerm} />
         <hr />
         <List list={stories} />
       </div>
