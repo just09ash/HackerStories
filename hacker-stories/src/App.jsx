@@ -56,9 +56,8 @@ const App = () => {
     <>
       <div>
         <h1>My Hacker Stories</h1>
-        <InputWithLabel id="search" type="text" onSearch={handleSearch} search={searchTerm}>
-        {/* <span>Search:</span> <em>(required)</em> */}
-        Search:&nbsp;
+        <InputWithLabel id="search" type="text" onSearch={handleSearch} search={searchTerm} isFocused={true}>
+        Search:
         </InputWithLabel>
         <hr />
         <List list={stories} />

@@ -21,3 +21,4 @@ Level 16: https://gamma.app/docs/LEVEL-16-React-Custom-Hooks-uc2r7v80cdpqldo
 Level 17: https://gamma.app/docs/LEVEL-17-React-Fragments-bvblpy22lmn1i9y
 Level 18: https://gamma.app/docs/Level-18-Reusable-React-Component-7v94piddpj9stok
 Level 19: https://gamma.app/docs/LEVEL-19-Component-Composition-3sjc3mw4uce4jd7
+Level 20: https://gamma.app/docs/LEVEL-20-Imperative-React-usref-6qkps73l1bk81ju
