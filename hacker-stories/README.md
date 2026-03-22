@@ -24,3 +24,4 @@ Level 19: https://gamma.app/docs/LEVEL-19-Component-Composition-3sjc3mw4uce4jd7
 Level 20: https://gamma.app/docs/LEVEL-20-Imperative-React-usref-6qkps73l1bk81ju
 Level 21: https://gamma.app/docs/LEVEL-21-Inline-Handler-in-JSX-Control-Actions-o9ptn3nk4iol4rh
 Level 22: https://gamma.app/docs/LEVEL-22-React-Asynchronous-Data-pm3udexhohee88m
+Level 23: https://gamma.app/docs/LEVEL-23-Conditional-Rendering-r0cg9vn0x01cw87

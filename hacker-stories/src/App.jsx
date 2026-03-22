@@ -31,11 +31,17 @@ const getAsyncStories = () =>
 
 const App = () => {
   const [stories, setStories] = useState([])
-  
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
+
   useEffect(() => {
+    setIsLoading(true)
+
     getAsyncStories().then((result) => {
       setStories(result.data.stories);
-    });
+      setIsLoading(false)
+    })
+      .catch(() => setIsError(true))
   }, []);
 
 
@@ -78,11 +84,18 @@ const App = () => {
     <>
       <div>
         <h1>My Hacker Stories</h1>
-        <InputWithLabel id="search" type="text" onSearch={handleSearch} search={searchTerm} isFocused={true}>
-          Search:
-        </InputWithLabel>
         <hr />
-        <List list={stories} onRemoveItem={handleRemoveStory} />
+        {isError && <p>Something Went Wrong!</p>}
+        {isLoading ? (<p>Loading...</p>) : (
+          <>
+            <InputWithLabel id="search" type="text" onSearch={handleSearch} search={searchTerm} isFocused={true}>
+              Search:
+            </InputWithLabel>
+            <hr />
+            <List list={stories} onRemoveItem={handleRemoveStory} />
+          </>
+        )
+        }
       </div>
     </>
   )
