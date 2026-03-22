@@ -3,7 +3,7 @@ import List from './List.jsx';
 import InputWithLabel from './InputWithLabel.jsx';
 
 
-const stories = [
+const initialStories = [
   {
     title: "React",
     url: "https://react.dev",
@@ -24,15 +24,17 @@ const stories = [
 
 
 const App = () => {
+  const [stories, setStories] = useState(initialStories)
+
   const useSemiPersistentState = (key, initialState) => {
     const [value, setValue] = useState(
       localStorage.getItem(key) ?? initialState
     )
     useEffect(() => {
-    localStorage.setItem(key, value)
-  }, [value, key])
+      localStorage.setItem(key, value)
+    }, [value, key])
 
-  return [value,setValue]
+    return [value, setValue]
   }
 
   const [searchTerm, setSearchTerm] = useSemiPersistentState('search', 'React')
@@ -52,15 +54,21 @@ const App = () => {
     return story.title.toLowerCase().includes(searchTerm.toLowerCase())
   })
 
+  const handleRemoveStory = (item) => {
+    const newstories = stories.filter(
+      (story) => item.objectID !== story.objectID
+    )
+    setStories(newstories)
+  }
   return (
     <>
       <div>
         <h1>My Hacker Stories</h1>
         <InputWithLabel id="search" type="text" onSearch={handleSearch} search={searchTerm} isFocused={true}>
-        Search:
+          Search:
         </InputWithLabel>
         <hr />
-        <List list={stories} />
+        <List list={stories} onRemoveItem={handleRemoveStory} />
       </div>
     </>
   )
